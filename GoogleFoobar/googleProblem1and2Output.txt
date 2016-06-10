@@ -1,0 +1,534 @@
+Mounting /home/guest...
+Welcome to foobar version 47-beta (2015-11-19-11:26+0000)
+
+Google has a code challenge ready for you.
+Been here before? Log in
+
+This invitation will expire if you close this page.
+Mounting /home/cdslug...
+Logged in as cdslug.
+foobar:~/ cdslug$ run()
+run(): command not found. Type help for a list of commands
+foobar:~/ cdslug$ help
+Use the following shell commands:
+cd	change directory [dir_name]
+cat	print file [file_name]
+deleteme	delete all of your data associated with foobar
+edit	open file in editor [file_name]
+feedback	provide feedback on foobar
+less	print a file a page at a time [file_name]
+ls	list directory contents [dir_name]
+request	request new challenge (of type 'tag') [tag]
+status	print progress
+submit	submit final solution file for assessment [file_name]
+tags	print tag list
+verify	runs tests on solution file [file_name]
+foobar:~/ cdslug$ ls
+start_here.txt
+foobar:~/ cdslug$ status
+You've not yet solved a challenge.
+foobar:~/ cdslug$ cat start_here.txt
+Type request to request a challenge. Type help for a list of commands.
+foobar:~/ cdslug$ request
+Requesting challenge...
+New challenge "rabbit_test_subjects" added to your home folder.
+Time to solve: 48 hours.
+foobar:~/ cdslug$ ls
+rabbit_test_subjects
+start_here.txt
+foobar:~/ cdslug$ rabbit_test_subjects
+rabbit_test_subjects: command not found. Type help for a list of commands
+foobar:~/ cdslug$ tags
+Requesting tags...
+algo           	algorithms
+data_struct    	data structures
+low_level      	low-level representation (binary representations, endianness)
+math           	math
+crypto         	security and cryptography
+foobar:~/ cdslug$ cat rabbit_test_subjects
+cat: rabbit_test_subjects: Is a directory
+foobar:~/ cdslug$ cd rabbit_test_subjects
+foobar:~/rabbit_test_subjects cdslug$ ls
+readme.txt
+constraints.txt
+solution.py
+solution.java
+foobar:~/rabbit_test_subjects cdslug$ cat readme.txt
+Rabbit test subjects
+====================
+
+The diabolical Professor Boolean has captured you and a group of your hapless rabbit kin as test subjects for his terrible experiments! You're not sure what his real plans are, but currently it seems he's trying to make everyone faster and smarter? He's exposing rabbit test subjects to novel chemicals, genetic manipulations, and pathogens; then measuring their completion time for various puzzles and exercises. Then again, there's a rumor he's developing a kind of zombie rabbit. You don't want to become a zombit!
+
+Unfortunately, due to insubordination and laziness, Professor Boolean just "eliminated" the lab assistant tracking all data from this research. Now, he's forcing you to sort through the notes and find something useful from the chaos. You have no choice but to abide by your captors evil rules. For now.
+
+Of the subjects that have survived, each has a distinct file, with anywhere from 1 to 100 measurements of completion time for the tests. The measurements from the before and after cases are listed separately, but the ordering has been mixed up. You have to figure out the degree of improvement (0% to 99%, rounded to the nearest whole number) based on the two lists of results.
+
+For example, if the first list of times is [22.2, 46, 100.8] and the second list is [23, 11.1, 50.4] you would return 50, because the times got 50% shorter: the 22.2 entry improved to 11.1, the 46 improved to 23, and the 100.8 improved to 50.4. Even though the data points are in different order, each improves by the same amount.
+
+Write a function answer(x, y) which takes two lists of floating point performance scores and returns the improvement percentage, rounded to the nearest integer.
+
+
+Languages
+=========
+
+To provide a Python solution, edit solution.py
+To provide a Java solution, edit solution.java
+
+Test cases
+==========
+
+Inputs:
+    (double list) y = [1.0]
+    (double list) x = [1.0]
+Output:
+    (int) 0
+
+Inputs:
+    (double list) y = [2.2999999999999998, 15.0, 102.40000000000001, 3486.8000000000002]
+    (double list) x = [23.0, 150.0, 1024.0, 34868.0]
+Output:
+    (int) 90
+
+Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+foobar:~/rabbit_test_subjects cdslug$ help
+Use the following shell commands:
+cd	change directory [dir_name]
+cat	print file [file_name]
+deleteme	delete all of your data associated with foobar
+edit	open file in editor [file_name]
+feedback	provide feedback on foobar
+less	print a file a page at a time [file_name]
+ls	list directory contents [dir_name]
+request	request new challenge (of type 'tag') [tag]
+status	print progress
+submit	submit final solution file for assessment [file_name]
+tags	print tag list
+verify	runs tests on solution file [file_name]
+foobar:~/rabbit_test_subjects cdslug$ edit solution.py
+foobar:~/rabbit_test_subjects cdslug$ verify
+verify: No such file or directory
+foobar:~/rabbit_test_subjects cdslug$ cd ../
+foobar:~/ cdslug$ ls
+rabbit_test_subjects
+start_here.txt
+foobar:~/ cdslug$ verify
+verify: No such file or directory
+foobar:~/ cdslug$ cd rabbit_test_subjects
+foobar:~/rabbit_test_subjects cdslug$ cd ../
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+AttributeError on line 3
+foobar:~/ cdslug$ cd rabbit_test_subjects/
+foobar:~/rabbit_test_subjects cdslug$ ls
+readme.txt
+constraints.txt
+solution.py
+solution.java
+foobar:~/rabbit_test_subjects cdslug$ cat constraints.txt
+Java
+====
+
+Your code will be compiled using standard Java 7. It must implement the answer() method in the solution stub.
+
+Execution time is limited. Some classes are restricted (e.g. java.lang.ClassLoader). You will see a notice if you use a restricted class when you verify your solution.
+
+Third-party libraries, input/output operations, spawning threads or processes and changes to the execution environment are not allowed.
+
+Python
+======
+
+Your code will run inside a Python 2.7.6 sandbox.
+
+Standard libraries are supported except for bz2, crypt, fcntl, mmap, pwd, pyexpat, select, signal, termios, thread, time, unicodedata, zipimport, zlib.
+foobar:~/rabbit_test_subjects cdslug$ cd ../
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 failed.
+Test 2 failed.
+Test 3 failed.
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 failed.
+Test 2 failed.
+Test 3 failed.
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+NameError on line 6
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 failed.
+Test 2 failed.
+Test 3 failed.
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ cat rabbit_test_subjects/readme.txt 
+Rabbit test subjects
+====================
+
+The diabolical Professor Boolean has captured you and a group of your hapless rabbit kin as test subjects for his terrible experiments! You're not sure what his real plans are, but currently it seems he's trying to make everyone faster and smarter? He's exposing rabbit test subjects to novel chemicals, genetic manipulations, and pathogens; then measuring their completion time for various puzzles and exercises. Then again, there's a rumor he's developing a kind of zombie rabbit. You don't want to become a zombit!
+
+Unfortunately, due to insubordination and laziness, Professor Boolean just "eliminated" the lab assistant tracking all data from this research. Now, he's forcing you to sort through the notes and find something useful from the chaos. You have no choice but to abide by your captors evil rules. For now.
+
+Of the subjects that have survived, each has a distinct file, with anywhere from 1 to 100 measurements of completion time for the tests. The measurements from the before and after cases are listed separately, but the ordering has been mixed up. You have to figure out the degree of improvement (0% to 99%, rounded to the nearest whole number) based on the two lists of results.
+
+For example, if the first list of times is [22.2, 46, 100.8] and the second list is [23, 11.1, 50.4] you would return 50, because the times got 50% shorter: the 22.2 entry improved to 11.1, the 46 improved to 23, and the 100.8 improved to 50.4. Even though the data points are in different order, each improves by the same amount.
+
+Write a function answer(x, y) which takes two lists of floating point performance scores and returns the improvement percentage, rounded to the nearest integer.
+
+
+Languages
+=========
+
+To provide a Python solution, edit solution.py
+To provide a Java solution, edit solution.java
+
+Test cases
+==========
+
+Inputs:
+    (double list) y = [1.0]
+    (double list) x = [1.0]
+Output:
+    (int) 0
+
+Inputs:
+    (double list) y = [2.2999999999999998, 15.0, 102.40000000000001, 3486.8000000000002]
+    (double list) x = [23.0, 150.0, 1024.0, 34868.0]
+Output:
+    (int) 90
+
+Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+NameError on line 4
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify rabbit_test_subjects/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ submit rabbit_test_subjects/solution.py
+Are you sure you want to submit your solution?
+[Y]es or [N]o: Y
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 46 mins, 52 secs.
+
+
+
+
+                                                         /@
+                                                        @~/@      @@
+                                                       @~~/ %    @$%@
+                                                       @~(((((%  %/////@
+                                                      @((//////@~/~~~@
+                                                        @(/// @///////@
+                                                         @//% @~~~/~~@
+                                                        /@$$$ @///~~//@           @@///%$$@
+                                                       @   %/@%//$////@@        @/%///~~  $//@@\
+                                                      @$   ////(((((/~  @    $@@///~  ~~~~~//////@@
+                                                     @$   ///@@@((((/////@//%%          ~~~~~~~~////@ $@@/@/$
+                                                    @$    /(@  @((((////%          ~~~~~~~///////////@$      @
+                                                    @     /((@@@((((/// %           ~~~~~~~~~/////////@      @@
+                                                    @ ~     (((((((((               ~~~~~~~~~//////////@     @
+                                                     @       ((((((               ~~~~~~~~~///////////@$   /@@
+                                                      @@/$                    ~~~~~~~~~~~~//////////@ @@@
+                                                         //@@@%%/~~              ~~~~~~//////$$$$$$$
+                                                             @$$~                       ~~~~~////@
+                                                           $              //@@@@@%%%  ~~~~~~////@
+                                                            $~~~~~    @@@@@@@      \    ~~~~(($@
+                                                          @$~~~     $@@$$            @/~~~~((%%%@
+                                                         @~~~~~@@@%                   @(((((((%%%@
+                                                         @~~~~@@                       \@(((((((@
+                                                         /@%$$@                           @(((((@
+                                                           @//@                             @%%@
+                                                                                            @@
+Level 1 complete. You are now on level 2. Challenges to complete level: 2.
+
+Level 1 100% [==========================================]
+Level 2   0% [..........................................]
+Level 3   0% [..........................................]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Type request to request a new challenge now, or come back later.
+foobar:~/ cdslug$ request
+Requesting challenge...
+New challenge "zombit_antidote" added to your home folder.
+Time to solve: 72 hours.
+foobar:~/ cdslug$ ls zombit_antidote/
+readme.txt
+constraints.txt
+solution.py
+solution.java
+foobar:~/ cdslug$ cat zombit_antidote/readme.txt
+Zombit antidote
+===============
+
+Forget flu season. Zombie rabbits have broken loose and are terrorizing Silicon Valley residents! Luckily, you've managed to steal a zombie antidote and set up a makeshift rabbit rescue station. Anyone who catches a zombie rabbit can schedule a meeting at your station to have it injected with the antidote, turning it back from a zombit to a fluffy bunny. Unfortunately, you have a limited amount of time each day, so you need to maximize these meetings. Every morning, you get a list of requested injection meetings, and you have to decide which to attend fully. If you go to an injection meeting, you will join it exactly at the start of the meeting, and only leave exactly at the end.
+
+Can you optimize your meeting schedule? The world needs your help!
+
+Write a method called answer(meetings) which, given a list of meeting requests, returns the maximum number of non-overlapping meetings that can be scheduled. If the start time of one meeting is the same as the end time of another, they are not considered overlapping.
+
+meetings will be a list of lists. Each element of the meetings list will be a two element list denoting a meeting request. The first element of that list will be the start time and the second element will be the end time of that meeting request.
+
+All the start and end times will be non-negative integers, no larger than 1000000. 
+The start time of a meeting will always be less than the end time.
+
+The number of meetings will be at least 1 and will be no larger than 100.
+The list of meetings will not necessarily be ordered in any particular fashion.
+
+Languages
+=========
+
+To provide a Python solution, edit solution.py
+To provide a Java solution, edit solution.java
+
+Test cases
+==========
+
+Inputs:
+    (int) meetings = [[0, 1], [1, 2], [2, 3], [3, 5], [4, 5]]
+Output:
+    (int) 4
+
+Inputs:
+    (int) meetings = [[0, 1000000], [42, 43], [0, 1000000], [42, 43]]
+Output:
+    (int) 1
+
+Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+foobar:~/ cdslug$ edit zombit_antidote/solution.py
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+NameError on line 7
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+NameError on line 9
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+NameError on line 10
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Test 1 failed.
+Test 2 passed!
+Test 3 failed.
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Test 1 passed!
+Test 2 passed!
+Test 3 passed!
+Test 4 failed.
+Test 5 passed!
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+NameError on line 4
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+NameError on line 22
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+IOError on line 7
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify zombit_antidote/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ help
+Use the following shell commands:
+cd	change directory [dir_name]
+cat	print file [file_name]
+deleteme	delete all of your data associated with foobar
+edit	open file in editor [file_name]
+feedback	provide feedback on foobar
+less	print a file a page at a time [file_name]
+ls	list directory contents [dir_name]
+request	request new challenge (of type 'tag') [tag]
+status	print progress
+submit	submit final solution file for assessment [file_name]
+tags	print tag list
+verify	runs tests on solution file [file_name]
+foobar:~/ cdslug$ submit zombit_antidote/solution.py
+Are you sure you want to submit your solution?
+[Y]es or [N]o: Y
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 4 hrs, 50 mins, 33 secs.
+
+
+
+
+                                                         /@
+                                                        @~/@      @@
+                                                       @~~/ %    @$%@
+                                                       @~(((((%  %/////@
+                                                      @((//////@~/~~~@
+                                                        @(/// @///////@
+                                                         @//% @~~~/~~@
+                                                        /@$$$ @///~~//@           @@///%$$@
+                                                       @   %/@%//$////@@        @/%///~~  $//@@\
+                                                      @$   ////(((((/~  @    $@@///~  ~~~~~//////@@
+                                                     @$   ///@@@((((/////@//%%          ~~~~~~~~////@ $@@/@/$
+                                                    @$    /(@  @((((////%          ~~~~~~~///////////@$      @
+                                                    @     /((@@@((((/// %           ~~~~~~~~~/////////@      @@
+                                                    @ ~     (((((((((               ~~~~~~~~~//////////@     @
+                                                     @       ((((((               ~~~~~~~~~///////////@$   /@@
+                                                      @@/$                    ~~~~~~~~~~~~//////////@ @@@
+                                                         //@@@%%/~~              ~~~~~~//////$$$$$$$
+                                                             @$$~                       ~~~~~////@
+                                                           $              //@@@@@%%%  ~~~~~~////@
+                                                            $~~~~~    @@@@@@@      \    ~~~~(($@
+                                                          @$~~~     $@@$$            @/~~~~((%%%@
+                                                         @~~~~~@@@%                   @(((((((%%%@
+                                                         @~~~~@@                       \@(((((((@
+                                                         /@%$$@                           @(((((@
+                                                           @//@                             @%%@
+                                                                                            @@
+Current level: 2. Challenges to complete level: 1.
+
+Level 1 100% [==========================================]
+Level 2  50% [=====================.....................]
+Level 3   0% [..........................................]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Type request to request a new challenge now, or come back later.
+foobar:~/ cdslug$ ls
+start_here.txt

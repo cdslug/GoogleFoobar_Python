@@ -1,0 +1,53 @@
+foobar:~/ cdslug$ request
+Requesting challenge...
+New challenge "backward_and_forward" added to your home folder.
+Time to solve: 48 hours.
+foobar:~/ cdslug$ cat backward_and_forward/readme.txt 
+Backward and forward
+====================
+
+The sign outside reads: Name no one man.
+
+"Escape. We must escape." Staring at the locked door of his cage, Beta Rabbit, spy and brilliant mathematician, has a revelation. "Of course! Name no one man - it's a palindrome! Palindromes are the key to opening this lock!" 
+
+To help Beta Rabbit crack the lock, write a function answer(n) which returns the smallest positive integer base b, at least 2, in which the integer n is a palindrome. The input n will satisfy "0 <= n <= 1000."
+
+Languages
+=========
+
+To provide a Python solution, edit solution.py
+To provide a Java solution, edit solution.java
+
+Test cases
+==========
+
+Inputs:
+    (int) n = 0
+Output:
+    (int) 2
+
+Inputs:
+    (int) n = 42
+Output:
+    (int) 4
+
+Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+foobar:~/ cdslug$ edit backward_and_forward/solution.py
+foobar:~/ cdslug$ verify backward_and_forward/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ submit backward_and_forward/solution.py
+Are you sure you want to submit your solution?
+[Y]es or [N]o: Y
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 34 mins, 19 secs.
+
+Current level: 3. Challenges to complete level: -12.  
+
+Level 1 100% [==========================================]
+Level 2 100% [==========================================]
+Level 3 100% [==================================================================================================================================================================================================================]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Type request to request a new challenge now, or come back later.

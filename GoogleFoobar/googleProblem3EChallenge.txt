@@ -1,0 +1,340 @@
+foobar:~/ cdslug$ request
+Requesting challenge...
+New challenge "square_supplies" added to your home folder.
+Time to solve: 96 hours.
+foobar:~/ cdslug$ ls
+square_supplies
+start_here.txt
+foobar:~/ cdslug$ cat square_supplies/readme.txt 
+Square supplies
+===============
+
+With the zombie cure injections ready to go, it's time to start treating our zombified rabbit friends (known as zombits) at our makeshift zombit treatment center. You need to run out really fast to buy some gauze pads but you only have 30 seconds before you need to be back.
+
+Luckily, the corner store has unlimited gauze pads in squares of all sizes. Jackpot! The pricing is simple - a square gauze pad of size K x K costs exactly K * K coins. For example, a gauze pad of size 3x3 costs 9 coins.
+
+You're in a hurry and the cashier takes a long time to process each transaction. You decide the fastest way to get what you need is to buy as few gauze pads as possible, while spending all of your coins (you can always cut up the gauze later if you need to). Given that you have n coins, what's the fewest number of gauze pads you can buy?
+
+Write a method answer(n), which returns the smallest number of square gauze pads that can be bought with exactly n coins.
+
+n will be an integer, satisfying 1 <= n <= 10000.
+
+Languages
+=========
+
+To provide a Python solution, edit solution.py
+To provide a Java solution, edit solution.java
+
+Test cases
+==========
+
+Inputs:
+    (int) n = 24
+Output:
+    (int) 3
+
+Inputs:
+    (int) n = 160
+Output:
+    (int) 2
+
+Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+foobar:~/ cdslug$ edit square_supplies/solution.py
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+Test 1 failed.
+Test 2 failed.
+Test 3 passed!
+Test 4 failed.
+Test 5 failed.
+foobar:~/ cdslug$ ls
+square_supplies
+start_here.txt
+foobar:~/ cdslug$ help
+Use the following shell commands:
+cd	change directory [dir_name]
+cat	print file [file_name]
+deleteme	delete all of your data associated with foobar
+edit	open file in editor [file_name]
+feedback	provide feedback on foobar
+less	print a file a page at a time [file_name]
+ls	list directory contents [dir_name]
+request	request new challenge (of type 'tag') [tag]
+status	print progress
+submit	submit final solution file for assessment [file_name]
+tags	print tag list
+verify	runs tests on solution file [file_name]
+foobar:~/ cdslug$ feedback
+[#1] What type of feedback are you reporting?
+[B]ug [F]eature [O]ther: B
+[#2] Feedback [105]: This is a probably a nuisance, but the readme for square_supplies states that "the corner store has unlimited gauze pads in squares of all sizes." Without stating that the dimension are integers, this could mean that I only need to buy one square. If I have 11 coins, then I need a pad with K = sqrt(11). I suggest you let programmers exploit this by allowing the answer 1 for every test case :)
+Are the above details correct?
+[Y]es or [N]o: Y
+Submitting your feedback...
+Feedback submitted. Thank you.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 9
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 8
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 25
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 35
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 35
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+SyntaxError: invalid syntax [line 35]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 19
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+NameError: global name 'input2' is not defined [line 16]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unexpected indent [line 18]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unexpected indent [line 19]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unexpected indent [line 19]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 20]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 21]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+SyntaxError: return outside function [line 21]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 21]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 9
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 8
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 19
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+SyntaxError: parenthesis is never closed [line 19]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 19
+foobar:~/ cdslug$ help
+Use the following shell commands:
+cd	change directory [dir_name]
+cat	print file [file_name]
+deleteme	delete all of your data associated with foobar
+edit	open file in editor [file_name]
+feedback	provide feedback on foobar
+less	print a file a page at a time [file_name]
+ls	list directory contents [dir_name]
+request	request new challenge (of type 'tag') [tag]
+status	print progress
+submit	submit final solution file for assessment [file_name]
+tags	print tag list
+verify	runs tests on solution file [file_name]
+foobar:~/ cdslug$ ls square_supplies/
+readme.txt
+constraints.txt
+solution.py
+solution.java
+foobar:~/ cdslug$ cat square_supplies/constraints.txt 
+Java
+====
+
+Your code will be compiled using standard Java 7. It must implement the answer() method in the solution stub.
+
+Execution time is limited. Some classes are restricted (e.g. java.lang.ClassLoader). You will see a notice if you use a restricted class when you verify your solution.
+
+Third-party libraries, input/output operations, spawning threads or processes and changes to the execution environment are not allowed.
+
+Python
+======
+
+Your code will run inside a Python 2.7.6 sandbox.
+
+Standard libraries are supported except for bz2, crypt, fcntl, mmap, pwd, pyexpat, select, signal, termios, thread, time, unicodedata, zipimport, zlib.
+foobar:~/ cdslug$ cat square_supplies/constraints.txt 
+Java
+====
+
+Your code will be compiled using standard Java 7. It must implement the answer() method in the solution stub.
+
+Execution time is limited. Some classes are restricted (e.g. java.lang.ClassLoader). You will see a notice if you use a restricted class when you verify your solution.
+
+Third-party libraries, input/output operations, spawning threads or processes and changes to the execution environment are not allowed.
+
+Python
+======
+
+Your code will run inside a Python 2.7.6 sandbox.
+
+Standard libraries are supported except for bz2, crypt, fcntl, mmap, pwd, pyexpat, select, signal, termios, thread, time, unicodedata, zipimport, zlib.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 21
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 21
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 20
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 20
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 27
+foobar:~/ cdslug$ feedback
+[#1] What type of feedback are you reporting?
+[B]ug [F]eature [O]ther: B
+Are the above details correct?
+[Y]es or [N]o: N
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndexError on line 3
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndexError on line 4
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndexError on line 4
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndexError on line 5
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 26
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 26
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+SyntaxError: invalid syntax [line 26]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 28
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 28
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 26
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 26
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 24
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 12
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unexpected indent [line 9]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unexpected indent [line 9]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: expected an indented block [line 8]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 9]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 9
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 9
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+IndentationError: unindent does not match any outer indentation level [line 7]
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 21
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+Could not find 'answer' function
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 4
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+RuntimeError on line 4
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+Time limit exceeded
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify square_supplies/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ submit square_supplies/solution.py
+Are you sure you want to submit your solution?
+[Y]es or [N]o: Y
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 4 hrs, 36 mins, 13 secs.
+
+Current level: 3. Challenges to complete level: -2.  
+
+Level 1 100% [==========================================]
+Level 2 100% [==========================================]
+Level 3 100% [=====================================================================]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Type request to request a new challenge now, or come back later.

@@ -1,0 +1,118 @@
+foobar:~/ cdslug$ request
+Requesting challenge...
+New challenge "name_that_rabbit" added to your home folder.
+Time to solve: 72 hours.
+foobar:~/ cdslug$ status
+Current level: 3. Challenges to complete level: -7.
+
+Level 1 100% [==========================================]
+Level 2 100% [==========================================]
+Level 3 100% [===========================================================================================================================================]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Refer a friend: https://goo.gl/5pAJ8Q [used]
+foobar:~/ cdslug$ cat name_that_rabbit/read
+cat: name_that_rabbit/read: No such file or directory
+foobar:~/ cdslug$ cat name_that_rabbit/readme.txt 
+Name that rabbit
+================
+
+"You forgot to give Professor Boolean's favorite rabbit specimen a name? You know how picky the professor is! Only particular names will do! Fix this immediately, before you're... eliminated!"
+
+Luckily, your minion friend has already come up with a list of possible names, and we all know that the professor has always had a thing for names with lots of letters near the 'tail end' of the alphabet, so to speak. You realize that if you assign the value 1 to the letter A, 2 to B, and so on up to 26 for Z, and add up the values for all of the letters, the names with the highest total values will be the professor's favorites. For example, the name Annie has value 1 + 14 + 14 + 9 + 5 = 43, while the name Earz, though shorter, has value 5 + 1 + 18 + 26 = 50. 
+
+If two names have the same value, Professor Boolean prefers the lexicographically larger name. For example, if the names were AL (value 13) and CJ (value 13), he prefers CJ.
+
+Write a function answer(names) which takes a list of names and returns the list sorted in descending order of how much the professor likes them. 
+
+There will be at least 1 and no more than 1000 names. 
+Each name will consist only of lower case letters. The length of each name will be at least 1 and no more than 8.
+
+Languages
+=========
+
+To provide a Python solution, edit solution.py
+To provide a Java solution, edit solution.java
+
+Test cases
+==========
+
+Inputs:
+    (string list) names = ["annie", "bonnie", "liz"]
+Output:
+    (string list) ["bonnie", "liz", "annie"]
+
+Inputs:
+    (string list) names = ["abcdefg", "vi"]
+Output:
+    (string list) ["vi", "abcdefg"]
+
+Use verify [file] to test your solution and see how it does. When you are finished editing your code, use submit [file] to submit your answer. If your solution passes the test cases, it will be removed from your home folder.
+
+foobar:~/ cdslug$ edit name_that_rabbit/solution.py
+foobar:~/ cdslug$ verify name_that_rabbit/solution.py
+Verifying solution...
+IOError on line 4
+foobar:~/ cdslug$ verify name_that_rabbit/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify name_that_rabbit/solution.py
+Verifying solution...
+Error(429): Please wait a few seconds before trying again.
+foobar:~/ cdslug$ submit name_that_rabbit/solution.py
+Are you sure you want to submit your solution?
+[Y]es or [N]o: Y
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 30 mins, 29 secs.
+
+Current level: 3. Challenges to complete level: -8.  
+
+Level 1 100% [==========================================]
+Level 2 100% [==========================================]
+Level 3 100% [=========================================================================================================================================================]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Log in to continue.
+Mounting /home/cdslug...
+Logged in as cdslug. Last login: 2015-12-10-18:04+0000.
+foobar:~/ cdslug$ ls
+start_here.txt
+foobar:~/ cdslug$ status
+Current level: 3. Challenges to complete level: -8.
+
+Level 1 100% [==========================================]
+Level 2 100% [==========================================]
+Level 3 100% [=========================================================================================================================================================]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+foobar:~/ cdslug$ edit maximum_equality/solution.py
+foobar:~/ cdslug$ verify maximum_equality/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify maximum_equality/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify maximum_equality/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ verify maximum_equality/solution.py
+Verifying solution...
+All test cases passed.
+foobar:~/ cdslug$ submit maximum_equality/solution.py
+Are you sure you want to submit your solution?
+[Y]es or [N]o: Y
+Submitting solution...
+Submission: SUCCESSFUL. Completed in: 21 mins, 55 secs.
+
+Current level: 3. Challenges to complete level: -9.  
+
+Level 1 100% [==========================================]
+Level 2 100% [==========================================]
+Level 3 100% [========================================================================================================================================================================]
+Level 4   0% [..........................................]
+Level 5   0% [..........................................]
+
+Type request to request a new challenge now, or come back later.
